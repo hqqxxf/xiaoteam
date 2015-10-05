@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.border-radius(@radius:100%){
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.user-left{
+  a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+  }
+  height: auto;
+  position: fixed;
+  .user-avatar{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px 0;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      .border-radius();
+      margin: 20px 0;
+    }
+
+  }
+  .user-list{
+    font-size: 20px;
+    padding: 5px 0;
+    p{
+      a:hover{
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .active{
+        font-weight: bold;
+      }
+    }
+  }
+}
+.user-right{
+  a{
+    color: #39F;
+    text-decoration: none;
+  }
+  height: auto;
+  .user-main{
+    padding-top:90px;
+    margin-left: 25px;
+    height: auto;
+    .contest-box{
+      padding-top: 10px;
+      .contest-com{
+        width: 100%;
+        border: 1px solid #d3d3d3;
+        height: 200px;
+        font-size: 16px;
+      }
+    }
+  }
+}

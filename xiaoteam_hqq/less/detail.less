@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.boxShadow(@x:0,@y:0,@blur:1px,@color:grey){
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+body{
+  background: rgb(221,246,250);
+}
+.modal a{
+  color: #39F;
+}
+.detail{
+  width: 100%;
+  height: auto;
+  position: relative;
+  clear: both;
+  .detail-header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .detail-main{
+    .detail-com-header{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+    .detail-bg-picture{
+      margin: 0 auto;
+      width: 90%;
+      height: 90%;
+      overflow: hidden;
+      .boxShadow(0px,0px,15px,#39F);
+    }
+    .detail-sm-picture{
+      margin: 0 auto;
+      width: 80%;
+      height: 80%;
+      overflow: hidden;
+      span{
+        display: block;
+        margin-left: 15px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img{
+       width: 100%;
+       height: auto;
+     }
+    .detail-main-centent{
+      margin-top: 20px;
+      margin-left: 20px;
+      b{
+        color: rgb(84,107,139);
+      }
+      i{
+        font-size: 20px;
+        padding: 5px;
+      }
+      .btn-icon{
+        padding: 5px;
+        margin-right: 20px;
+        a{
+          text-decoration: none;
+          font-size: 20px;
+          &:hover{
+            text-decoration: none;
+            color: white;
+          }
+        }
+
+      }
+    }
+    .comment-item{
+      background: white;
+      .avator{
+        border: 1px solid #39F;
+      }
+    }
+
+  }
+}

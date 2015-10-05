@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.user-left {
+  height: auto;
+  position: fixed;
+}
+.user-left a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+.user-left .user-avatar {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.user-left .user-avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  margin: 20px 0;
+}
+.user-left .user-list {
+  font-size: 20px;
+  padding: 5px 0;
+}
+.user-left .user-list p a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.user-left .user-list p .active {
+  font-weight: bold;
+}
+.user-right {
+  height: auto;
+}
+.user-right a {
+  color: #39F;
+  text-decoration: none;
+}
+.user-right .user-main {
+  padding-top: 90px;
+  margin-left: 25px;
+  height: auto;
+}
+.user-right .user-main .contest-box {
+  padding-top: 10px;
+}
+.user-right .user-main .contest-box .contest-com {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  height: 200px;
+  font-size: 16px;
+}

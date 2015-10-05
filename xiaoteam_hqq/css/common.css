@@ -1,0 +1,160 @@
+@charset "utf-8";
+@font-face {
+  font-family: "showye";
+  src: url("../css/fonts/shouye.ttf");
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.showye-font {
+  font-family: showye;
+}
+.icon-white {
+  color: white;
+}
+.icon-grey {
+  color: #a9a9a9;
+}
+.icon-blue {
+  color: #39F;
+}
+.bg-blue {
+  background: #39F;
+}
+.bg-grey {
+  background: #a9a9a9;
+}
+.icom-size-medium {
+  font-size: 30px;
+}
+.icom-size-lg {
+  font-size: 100px;
+}
+i.fa.fa-mobile.icon-grey.icom-size-medium {
+  padding: 0 4px;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+  .navbar-brand {
+    padding: 30px;
+    margin-right: 10%;
+  }
+  .navbar-brand i {
+    margin-top: -30px;
+    width: 220px;
+    height: 100px;
+    display: block;
+    background-image: url("../images/logo-white.png");
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+  }
+}
+.clear {
+  clear: both;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #39F;
+}
+ul.nav.navbar-nav li {
+  position: relative;
+}
+ul.nav.navbar-nav li:hover a {
+  color: #39F;
+}
+ul.nav.navbar-nav li:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #39F;
+  bottom: 0;
+}
+.index-main li {
+  list-style: none;
+}
+.index-main ol {
+  z-index: 999;
+  position: absolute;
+  right: 10px;
+}
+.index-main ol li {
+  background: black;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-top: 20px;
+  border: 2px white solid;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.index-main .bg-img {
+  position: absolute;
+  width: 100%;
+  display: block;
+  min-height: 200px;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.index-main .bg-img-main1 {
+  background: url('../images/1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-main .bg-img-main2 {
+  background: url('../images/2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-main .bg-img-main3 {
+  background: url('../images/3.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-main .bg-img-main4 {
+  background: url('../images/4.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.index-main .login {
+  margin-top: 40%;
+}
+.index-main .login .login-header {
+  margin-bottom: 20px;
+}
+.index-main .login .contest {
+  font-size: 100px;
+  color: white;
+}
+.index-main input[type='password'] {
+  height: 50px;
+}
+.index-main input[type='text'] {
+  height: 50px;
+}
+.index-main input[type='submit'] {
+  height: 50px;
+}
+.index-main .input-group-addon {
+  background: white;
+}
+.footer {
+  margin-top: 30px;
+  width: 100%;
+  background: #000;
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+}
+.footer .space {
+  padding-right: 10px;
+}

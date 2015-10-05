@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body {
+  background: #ddf6fa;
+}
+.modal a {
+  color: #39F;
+}
+.detail {
+  width: 100%;
+  height: auto;
+  position: relative;
+  clear: both;
+}
+.detail .detail-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+.detail .detail-main .detail-com-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.detail .detail-main .detail-bg-picture {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 15px #3399ff;
+  -webkit-box-shadow: 0px 0px 15px #3399ff;
+  box-shadow: 0px 0px 15px #3399ff;
+}
+.detail .detail-main .detail-sm-picture {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+.detail .detail-main .detail-sm-picture span {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.detail .detail-main img {
+  width: 100%;
+  height: auto;
+}
+.detail .detail-main .detail-main-centent {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.detail .detail-main .detail-main-centent b {
+  color: #546b8b;
+}
+.detail .detail-main .detail-main-centent i {
+  font-size: 20px;
+  padding: 5px;
+}
+.detail .detail-main .detail-main-centent .btn-icon {
+  padding: 5px;
+  margin-right: 20px;
+}
+.detail .detail-main .detail-main-centent .btn-icon a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.detail .detail-main .detail-main-centent .btn-icon a:hover {
+  text-decoration: none;
+  color: white;
+}
+.detail .detail-main .comment-item {
+  background: white;
+}
+.detail .detail-main .comment-item .avator {
+  border: 1px solid #39F;
+}

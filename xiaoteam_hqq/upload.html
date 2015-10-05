@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <title>小队TEAM</title>
+    <link rel="stylesheet" href="css/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/upload.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <i></i>
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#contest">报比赛</a></li>
+                <li><a href="#activity">蹭活动</a></li>
+                <li><a href="#talk">吐槽机</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!--header end-->
+
+<!--upload main start-->
+
+<div class="container">
+    <div class="row">
+        <div class="wrapper-upload">
+            <img src="images/upload.jpg" alt="upload"/>
+
+            <div id="contest" style="position: absolute; top: 0; left: 0;width: 50%;height: 400px; cursor: pointer"></div>
+            <div id="activity" style="position: absolute; top: 0; right: 0;width: 50%;height: 400px; cursor: pointer"></div>
+        </div>
+        <div class="wrapper-upload-contest" id="upload-contest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10 text-center">
+
+                        <div class="wrapper-upload-contest-main">
+                            <i class="sanjiao contest-left"></i>
+                            <form class="form-horizontal" action="" method="post">
+                                <div class="form-group">
+                                    <label for="title" class="col-sm-2 control-label">标题</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="title" placeholder="标题">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">内容</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="file" class="col-sm-2 control-label">海报</label>
+                                    <div class="col-sm-4">
+                                        <input type="file" name="file" id="file" class="btn btn-info" />
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label>（1M以内）</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user" class="col-sm-2 control-label">联系人</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="user" placeholder="联系人">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="col-sm-2 control-label">联系方式</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="phone" placeholder="联系方式">
+                                    </div>
+                                </div>
+                                <div class="form-group contest-radio">
+                                    <label class="col-sm-2 control-label">是否需要报名表</label>
+
+                                    <div class="col-sm-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="baomingbiao" value="no" checked>
+                                                否
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="baomingbiao" value="yes">
+                                                是
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div id="apply" style="display: none">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label icon-blue">请勾选报名信息</label>
+                                    <div class="col-sm-10">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>姓名
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>性别
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>年龄
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>学院
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>专业班级
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>兴趣爱好
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"/>个人简历
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">其他</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5" placeholder="格式为：xxx+xxx"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button id="submit1" type="submit" class="btn btn-primary">确定</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="wrapper-upload-contest" style="display: none" id="upload-activity">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10 text-center">
+                        <div class="wrapper-upload-contest-main">
+                            <i class="sanjiao activity-right"></i>
+                            <form class="form-horizontal" action="" method="post">
+                                <div class="form-group">
+                                    <label for="title1" class="col-sm-2 control-label">标题</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="title1" placeholder="标题">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">内容</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="file1" class="col-sm-2 control-label">海报</label>
+                                    <div class="col-sm-4">
+                                        <input type="file" name="file" id="file1" class="btn btn-info" />
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label>（1M以内）</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user1" class="col-sm-2 control-label">联系人</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="user1" placeholder="联系人">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone1" class="col-sm-2 control-label">联系方式</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="phone1" placeholder="联系方式">
+                                    </div>
+                                </div>
+                                <div class="form-group activity-radio">
+                                    <label class="col-sm-2 control-label">是否需要报名表</label>
+
+                                    <div class="col-sm-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="baomingbiao1" value="no" checked>
+                                                否
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="baomingbiao1" value="yes">
+                                                是
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="apply1" style="display: none">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label icon-blue">请勾选报名信息</label>
+                                        <div class="col-sm-10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>姓名
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>性别
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>年龄
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>学院
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>专业班级
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>兴趣爱好
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"/>个人简历
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">其他</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" rows="5" placeholder="格式为：xxx+xxx"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" id="submit2" class="btn btn-primary">确定</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+<div class="footer">
+    <a href="#">加入我们</a>
+    <span class="space">|</span><a href="#">商务合作</a>
+    <span class="space">|</span><a href="#">帮助中心</a>
+    <span class="space">|</span><a href="#">意见反馈</a>
+</div>
+
+<!-- upload main end -->
+
+<script type="text/javascript" src="css/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="css/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/upload.js"></script>
+</body>
+</html>
